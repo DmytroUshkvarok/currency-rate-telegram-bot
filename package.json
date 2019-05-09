@@ -1,0 +1,39 @@
+{
+  "name": "currency-rate-telegram-bot",
+  "version": "1.0.0",
+  "description": "Currency rate Telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmytro-Ushkvarok/currency-rate-telegram-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "currency",
+    "bot",
+    "chat"
+  ],
+  "author": "Dmytro Ushkvarok",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dmytro-Ushkvarok/currency-rate-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/Dmytro-Ushkvarok/currency-rate-telegram-bot#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "node-telegram-bot-api": "^0.30.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}

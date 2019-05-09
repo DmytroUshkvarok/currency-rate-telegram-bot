@@ -1,0 +1,133 @@
+{
+    "welcome": {
+        "text": "Рад приветствовать тебя, уважаемый пользователь!\nЯ - бот, который поможет узнать тебе курс любой валюты 🙂\n\nДля начала работы нажми на кнопку внизу 👇",
+        "attachment": {
+            "reply_markup": {
+                "keyboard": [
+                        [
+                            {
+                                "text": "Начать работу"
+                            }
+                        ]
+                    ],
+                "resize_keyboard": true,
+                "one_time_keyboard": true
+            }
+        }
+    },
+    "startWorking": {
+        "text": "Отлично, давай поскорее начнем.\nВыбирай валюту 👇",
+        "attachment": {
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "USD / UAH",
+                            "callback_data": "check USD"
+                        },
+                        {
+                            "text": "EUR / UAH",
+                            "callback_data": "check EUR"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "RUR / UAH",
+                            "callback_data": "check RUR"
+                        },
+                        {
+                            "text": "BTC / USD",
+                            "callback_data": "check BTC"
+                        }
+                    ]
+                ]
+            }
+        }
+    },
+    "showRate": {
+        "text": "Вот текущий курс интересующей тебя валюты согласно данным ПриватБанка\n\nПокупка 👉 1 {{inbound}} = {{buyRate}} {{outbound}}\nПродажа 👉 1 {{inbound}} = {{saleRate}} {{outbound}}",
+        "attachment": {
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Изменить тип курса",
+                            "callback_data": "change_rate_type "
+                        },
+                        {
+                            "text": "Выбрать другую валюту",
+                            "callback_data": "change_currency"
+                        }
+                    ]
+                ]
+            }
+        }
+    },
+    "chooseAnother": {
+        "text": "Выбирай валюту 👇",
+        "attachment": {
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "USD / UAH",
+                            "callback_data": "check USD"
+                        },
+                        {
+                            "text": "EUR / UAH",
+                            "callback_data": "check EUR"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "RUR / UAH",
+                            "callback_data": "check RUR"
+                        },
+                        {
+                            "text": "BTC / USD",
+                            "callback_data": "check BTC"
+                        }
+                    ]
+                ]
+            }
+        }
+    },
+    "askForCurrencyType": {
+        "text": "Какой тип курса {{currency}} тебя интересует?",
+        "attachment": {
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Наличный курс",
+                            "callback_data": "show_rate 5 "
+                        },
+                        {
+                            "text": "Безналичный курс",
+                            "callback_data": "show_rate 11 "
+                        }
+                    ]
+                ]
+            }
+        }
+    },
+    "changeRateType": {
+        "text": "Какой тип курса {{currency}} тебя интересует?",
+        "attachment": {
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Наличный курс",
+                            "callback_data": "show_rate 5 "
+                        },
+                        {
+                            "text": "Безналичный курс",
+                            "callback_data": "show_rate 11 "
+                        }
+                    ]
+                ]
+            }
+        }
+    }
+}
