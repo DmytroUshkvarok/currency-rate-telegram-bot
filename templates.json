@@ -52,7 +52,7 @@
                     [
                         {
                             "text": "Изменить тип курса",
-                            "callback_data": "change_rate_type "
+                            "callback_data": ""
                         },
                         {
                             "text": "Выбрать другую валюту",
@@ -100,11 +100,11 @@
                     [
                         {
                             "text": "Наличный курс",
-                            "callback_data": "show_rate 5 "
+                            "callback_data": ""
                         },
                         {
                             "text": "Безналичный курс",
-                            "callback_data": "show_rate 11 "
+                            "callback_data": ""
                         }
                     ]
                 ]
@@ -119,11 +119,11 @@
                     [
                         {
                             "text": "Наличный курс",
-                            "callback_data": "show_rate 5 "
+                            "callback_data": ""
                         },
                         {
                             "text": "Безналичный курс",
-                            "callback_data": "show_rate 11 "
+                            "callback_data": ""
                         }
                     ]
                 ]
